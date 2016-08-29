@@ -1,7 +1,7 @@
 {%set name = "botocore" %}
-{%set version = "1.4.41" %}
+{%set version = "1.4.49" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "da37c2b9c942ff280e47122e48e1e9af827c81191da919e9c434c69e455e6a30" %}
+{%set hash_val = "c7804efb622f340593ae49cc552481f2820de2088199a0010d469cf0dfb94731" %}
 
 package:
   name: {{ name }}
@@ -20,11 +20,11 @@ requirements:
   build:
     - python
     - setuptools
-    - jmespath >=0.7.1,<1.0.0
-    - python-dateutil >=2.1,<3.0.0
-    - docutils >=0.10
-    - ordereddict ==1.1  # [py26]
-    - simplejson ==3.3.0  # [py26]
+    # - jmespath >=0.7.1,<1.0.0
+    # - python-dateutil >=2.1,<3.0.0
+    # - docutils >=0.10
+    # - ordereddict ==1.1  # [py26]
+    # - simplejson ==3.3.0  # [py26]
 
   run:
     - python
@@ -52,7 +52,11 @@ test:
 about:
   home: https://github.com/boto/botocore
   license: Apache 2.0
+  license_file: LICENSE.txt
+  license_family: Apache
   summary: 'Low-level, data-driven core of boto 3.'
+  dev_url: https://github.com/boto/botocore
+  doc_url: https://botocore.readthedocs.io/en/latest/
 
 extra:
   recipe-maintainers:
