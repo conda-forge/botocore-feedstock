@@ -1,19 +1,21 @@
-{%set name = "botocore" %}
-{%set version = "1.5.55" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "a6fde0a6ba37aa586e849928f09721bb960e932b0780465cd5b5c25e31fc35d2" %}
+{% set name = "botocore" %}
+{% set version = "1.5.55" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "a6fde0a6ba37aa586e849928f09721bb960e932b0780465cd5b5c25e31fc35d2" %}
+{% set build = 0 %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -46,8 +48,8 @@ test:
 
 about:
   home: https://github.com/boto/botocore
-  license: Apache 2.0
   license_file: LICENSE.txt
+  license: Apache 2.0
   license_family: Apache
   summary: 'Low-level, data-driven core of boto 3.'
   dev_url: https://github.com/boto/botocore
