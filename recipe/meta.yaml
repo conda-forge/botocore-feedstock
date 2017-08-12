@@ -45,11 +45,14 @@ test:
     - botocore.vendored.requests.packages.urllib3.util
 
 about:
-  home: https://github.com/boto/botocore
+  home: http://aws.amazon.com/sdk-for-python/
   license_file: LICENSE.txt
   license: Apache 2.0
+  license_url: http://aws.amazon.com/apache2.0/
   license_family: Apache
   summary: 'Low-level, data-driven core of boto 3.'
+  description: |
+    Provides the core functionality of Boto3, the AWS SDK for Python
   dev_url: https://github.com/boto/botocore
   doc_url: https://botocore.readthedocs.io/en/latest/
 
