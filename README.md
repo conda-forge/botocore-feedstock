@@ -14,9 +14,7 @@ Summary: Low-level, data-driven core of boto 3.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/botocore-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/botocore-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/botocore-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/botocore-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/botocore-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/botocore-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/botocore-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/botocore-feedstock)
 
 Current release info
 ====================
