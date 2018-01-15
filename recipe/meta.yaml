@@ -1,8 +1,8 @@
 {% set name = "botocore" %}
-{% set version = "1.8.23" %}
+{% set version = "1.8.28" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "cc5df29da7c3f523edfc6086e082204b80945b5c73bf82a181018b7f1a5d6975" %}
+{% set hash = "02d360797944f091fb5341a2a51810aa6f44f8b40ac66951c876555e410e5f06" %}
 {% set build = 0 %}
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
