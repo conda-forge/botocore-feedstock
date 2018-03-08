@@ -1,8 +1,8 @@
 {% set name = "botocore" %}
-{% set version = "1.9.4" %}
+{% set version = "1.9.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "53b5efe4d4cf53885eee0ce583f05777e25599a17d890230880ef55c85f7f98e" %}
+{% set hash = "550f95b2cf66a9089480fd37ca82d49126826dcc62a47f5c4fa4c364b5467920" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
