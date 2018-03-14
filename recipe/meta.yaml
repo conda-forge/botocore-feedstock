@@ -1,8 +1,8 @@
 {% set name = "botocore" %}
-{% set version = "1.9.7" %}
+{% set version = "1.9.8" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "0794994bf5a50d1b7df0b43c319d4a2ecd3fe26b55c0313e7427c0910fc977c1" %}
+{% set hash = "e0a24bc30c282df4a046c81d07d70cfc7a61bb63a646112ccc825cdaa858fe2a" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
   run:
     - python
     - jmespath >=0.7.1,<1.0.0
-    - python-dateutil >=2.1,<3.0.0
+    - python-dateutil >=2.1,<2.7.0
     - docutils >=0.10
     - ordereddict ==1.1  # [py26]
     - simplejson ==3.3.0  # [py26]
