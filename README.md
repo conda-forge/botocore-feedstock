@@ -14,12 +14,15 @@ Summary: Low-level, data-driven core of boto 3.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/botocore-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/botocore-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/botocore-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/botocore-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/botocore/badges/version.svg)](https://anaconda.org/conda-forge/botocore)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/botocore/badges/downloads.svg)](https://anaconda.org/conda-forge/botocore)
+[![Conda Recipe](https://img.shields.io/badge/recipe-botocore-green.svg)](https://anaconda.org/conda-forge/botocore)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
 
 Installing botocore
 ===================
