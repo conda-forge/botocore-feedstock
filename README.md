@@ -19,10 +19,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-botocore-green.svg)](https://anaconda.org/conda-forge/botocore)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-botocore-green.svg)](https://anaconda.org/conda-forge/botocore) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/botocore.svg)](https://anaconda.org/conda-forge/botocore) |
 
 Installing botocore
 ===================
