@@ -1,8 +1,8 @@
 {% set name = "botocore" %}
-{% set version = "1.10.39" %}
+{% set version = "1.10.40" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "87fe59966e2a31efbb80b279bc0dc7273bc4c058cdd49f957de402804a544828" %}
+{% set hash = "8873388deff33683bc437dd615ada5862c721754accf379ebe4ce0e21cbe2544" %}
 
 package:
   name: {{ name|lower }}
