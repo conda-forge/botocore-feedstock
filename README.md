@@ -1,7 +1,7 @@
 About botocore
 ==============
 
-Home: https://github.com/boto/botocore
+Home: http://aws.amazon.com/sdk-for-python/
 
 Package license: Apache 2.0
 
@@ -9,6 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Low-level, data-driven core of boto 3.
 
+Provides the core functionality of Boto3, the AWS SDK for Python
 
 
 Current build status
