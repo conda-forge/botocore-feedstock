@@ -1,28 +1,22 @@
-{% set name = "botocore" %}
 {% set version = "1.12.1" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "971ac2892aeda8cc0c1d74b0d8927dc153ee2681923e3366b632be528f459b28" %}
 
 package:
-  name: {{ name|lower }}
+  name: botocore
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.org/packages/source/b/botocore/botocore-{{ version }}.tar.gz
+  sha256: 971ac2892aeda8cc0c1d74b0d8927dc153ee2681923e3366b632be528f459b28
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
     - python
     - pip
-
   run:
     - python
     - jmespath >=0.7.1,<1.0.0
@@ -62,3 +56,4 @@ extra:
     - pmlandwehr
     - hajapy
     - tkelman
+    - ocefpaf
