@@ -1,4 +1,4 @@
-{% set version = "1.12.11" %}
+{% set version = "1.12.12" %}
 
 package:
   name: botocore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/botocore/botocore-{{ version }}.tar.gz
-  sha256: f9d79c6bdf5d7ada6a929e2c91af9a17b0c49bed9647819780482425a57a2778
+  sha256: 16f6efdd2c6fbba633480db5a2564ff713627c655fa79b37395d6d15719ba573
 
 build:
   number: 0
