@@ -1,4 +1,4 @@
-{% set version = "1.12.153" %}
+{% set version = "1.12.154" %}
 
 package:
   name: botocore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/botocore/botocore-{{ version }}.tar.gz
-  sha256: 6d03ec48f297fc429262603345d1e264f50064719dca7aadcff998014d935f9a
+  sha256: 8b0367dc5af8182fe82b55cf93425f99bff577c473a37468a46bf3717fcbb117
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - jmespath >=0.7.1,<1.0.0
     - python-dateutil >=2.1,<3.0.0
     - docutils >=0.10
-    - urllib3 >=1.20,<1.25
+    - urllib3 >=1.20,<1.26
 
 test:
   imports:
