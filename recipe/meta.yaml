@@ -32,12 +32,7 @@ test:
     - botocore.vendored
     - botocore.vendored.requests
     - botocore.vendored.requests.packages
-    - botocore.vendored.requests.packages.chardet
     - botocore.vendored.requests.packages.urllib3
-    - botocore.vendored.requests.packages.urllib3.contrib
-    - botocore.vendored.requests.packages.urllib3.packages
-    - botocore.vendored.requests.packages.urllib3.packages.ssl_match_hostname
-    - botocore.vendored.requests.packages.urllib3.util
 
 about:
   home: http://aws.amazon.com/sdk-for-python/
