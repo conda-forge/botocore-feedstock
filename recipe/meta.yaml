@@ -1,4 +1,4 @@
-{% set version = "1.15.5" %}
+{% set version = "1.15.6" %}
 
 package:
   name: botocore
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/botocore/botocore-{{ version }}.tar.gz
-  sha256: 9de7885e9e9d6dbc30b9846d7edd8f98251db7f00395a6f4cfd765efc7098bdb
+  sha256: 3319562f183f760f18f186914fc753f6a9c76c5783ba902fe75a934dd140bad8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: Apache 2.0
   license_url: http://aws.amazon.com/apache2.0/
   license_family: Apache
-  summary: 'Low-level, data-driven core of boto 3.'
+  summary: Low-level, data-driven core of boto 3.
   description: |
     Provides the core functionality of Boto3, the AWS SDK for Python
   dev_url: https://github.com/boto/botocore
