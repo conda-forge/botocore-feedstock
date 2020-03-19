@@ -1,5 +1,5 @@
-{% set version = "1.15.24" %}
-{% set hash = "85f1c3f402925a1b896ff198b01cb55e34e7bd28f7ce5ff3450bcfe69376bddd" %}
+{% set version = "1.15.25" %}
+{% set hash = "6639ca0f1cc49ce8bfff220cebcf582028e96de2043f83dbc6868edce00e438c" %}
 
 package:
   name: botocore
@@ -38,7 +38,7 @@ test:
 about:
   home: http://aws.amazon.com/sdk-for-python/
   license_file: LICENSE.txt
-  license: Apache 2.0
+  license: Apache-2.0
   license_url: http://aws.amazon.com/apache2.0/
   license_family: Apache
   summary: Low-level, data-driven core of boto 3.
