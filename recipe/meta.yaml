@@ -38,7 +38,7 @@ test:
 about:
   home: http://aws.amazon.com/sdk-for-python/
   license_file: LICENSE.txt
-  license: Apache 2.0
+  license: Apache-2.0
   license_url: http://aws.amazon.com/apache2.0/
   license_family: Apache
   summary: Low-level, data-driven core of boto 3.
