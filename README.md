@@ -3,7 +3,7 @@ About botocore
 
 Home: http://aws.amazon.com/sdk-for-python/
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
