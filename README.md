@@ -124,6 +124,5 @@ Feedstock Maintainers
 
 * [@hajapy](https://github.com/hajapy/)
 * [@ocefpaf](https://github.com/ocefpaf/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@tkelman](https://github.com/tkelman/)
 
