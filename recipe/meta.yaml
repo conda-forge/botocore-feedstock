@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.10
     - pip
   run:
     - python >=3.6
@@ -35,6 +35,7 @@ test:
     - botocore.vendored.requests.packages.urllib3
   requires:
     - pip
+    - python <3.10
   commands:
     - pip check
 
