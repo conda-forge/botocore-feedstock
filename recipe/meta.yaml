@@ -12,11 +12,12 @@ source:
 build:
   number: 1
   noarch: python
+  skip: True  # [python <36]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.6,<3.10
+    - python
     - pip
   run:
     - python >=3.6
