@@ -1,5 +1,5 @@
-{% set version = "1.21.49" %}
-{% set hash = "0161c3b64e34315928aae7fdbce49e684c9c2cfad2435cb22023b7ad87306f12" %}
+{% set version = "1.21.63" %}
+{% set hash = "38c0a98aefc3ff01d9970d84939ff48dd994c49c81cf34ee366860d774852f88" %}
 
 package:
   name: botocore
@@ -12,11 +12,12 @@ source:
 build:
   number: 1
   noarch: python
+  skip: True  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
   run:
     - python >=3.6
@@ -35,6 +36,7 @@ test:
     - botocore.vendored.requests.packages.urllib3
   requires:
     - pip
+    - python <3.10
   commands:
     - pip check
 
