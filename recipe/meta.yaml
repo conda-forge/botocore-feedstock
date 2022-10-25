@@ -1,6 +1,7 @@
 {% set version = "1.27.59" %}
 {% set hash = "eda4aed6ee719a745d1288eaf1beb12f6f6448ad1fa12f159405db14ba9c92cf" %}
 
+#Test
 package:
   name: botocore
   version: {{ version }}
