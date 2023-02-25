@@ -1,11 +1,11 @@
-About botocore
-==============
+About botocore-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/botocore-feedstock/blob/main/LICENSE.txt)
 
 Home: http://aws.amazon.com/sdk-for-python/
 
 Package license: [Apache-2.0](http://aws.amazon.com/apache2.0/)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/botocore-feedstock/blob/main/LICENSE.txt)
 
 Summary: Low-level, data-driven core of boto 3.
 
