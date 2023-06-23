@@ -1,8 +1,10 @@
-travis:
-  secure:
-    BINSTAR_TOKEN: YtfK1NRc3axdHEEjRBTKCeqqutMyIOmV7RNHn/VXO5Xi60wxUU2+uDot8rtZhVv4mTbhmLJXOlNFmY6VqeGTp7dkKw5Pkn2v4JEgvW2G9kObJ0b8QUx0C6iectSQ42N0iI1TBQ7788imGgiVF8IuOJBJTqaKMOmLelwMJYC0PAuMLtSMwjkxBjriAOFV59W5RO7OYGy/yXZt6gPQ9OISH9Yu9NHe0vJBjPaD9rQEmHGEk2GWNVCkTi3wfFU8hQ8Mpj7m+5Z0DImLiHlOe4eeD5n05W8LxK6P+5eocCIdQvwZl6IZkoezxpqEEseYw9436HuBgexTZYD6yGqakytKgl4BTMjGx9MM9GgI+1cKDG8h/CDsRaUAOLMa0dQCjCqdR1jpE7IY3mrcotQlnID9SckuUVHsIeq+BRqHnXDaXas9sHdmIwbA+Xil8OsfvfG18dR8CNbe4CrDxfaGCCH4PPDuXXVRcingpULvomyivIRJe9CTWC7uI8M26wGNecMF7bsPIsraYg/WsukLko1TCc6QR0uaB5B+VmxclaX5thRCiFVa4j3TN5RjxnHPVAlEozL7C9IWM5n7y4JuqqiiCv2cIARfhQJ0PCHK0WlD5mJ+mkJq/RYcPBsiZBEW748pcVDfj6ARolwxzs7YMTXOOjwwg8k/l4ZCOdjlX7rUjV4=
-appveyor:
-  secure:
-    BINSTAR_TOKEN: tumuXLL8PU75WMnRDemRy02ruEq2RpNxeK3dz0MjFssnosPm2v4EFjfNB4PTotA1
 provider:
   linux: azure
+conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
+conda_build:
+  pkg_format: '2'
+bot:
+  inspection: update-grayskull
