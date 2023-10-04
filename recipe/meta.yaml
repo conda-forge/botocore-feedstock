@@ -1,5 +1,5 @@
-{% set version = "1.31.59" %}
-{% set hash = "159f637300206a0b37b49c1bee61265650843f591e9cb62e9adcb3d1c2afec91" %}
+{% set version = "1.31.60" %}
+{% set hash = "578470a15a5bd64f67437a81f23feccba85084167acf63c56acada2c1c1d95d8" %}
 
 package:
   name: botocore
