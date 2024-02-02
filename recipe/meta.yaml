@@ -15,15 +15,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python
     - pip
   run:
-    - python >=3.8
+    - python
     - jmespath >=0.7.1,<2.0.0
     - python-dateutil >=2.1,<3.0.0
-    - urllib3 >=1.25.4,<1.27; python_version<"3.10"
+    - urllib3 >=1.25.4,<1.27  # [py<310]
 # https://github.com/boto/botocore/pull/3034
-    - urllib3 >=1.25.4,<2.1; python_version>="3.10"
+    - urllib3 >=1.25.4,<2.1  # [py>=310]
 
 test:
   imports:
