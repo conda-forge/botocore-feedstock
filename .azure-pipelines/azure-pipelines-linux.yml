@@ -8,12 +8,12 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_python_lt_310False:
-        CONFIG: linux_64_python_lt_310False
+      linux_64_python_pin_versiongeq310:
+        CONFIG: linux_64_python_pin_versiongeq310
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python_lt_310True:
-        CONFIG: linux_64_python_lt_310True
+      linux_64_python_pin_versiongeq38:
+        CONFIG: linux_64_python_pin_versiongeq38
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
