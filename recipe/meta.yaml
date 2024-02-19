@@ -10,8 +10,10 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
+  string: pyge38_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_version == "old"]
+  string: pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_version == "new"]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
