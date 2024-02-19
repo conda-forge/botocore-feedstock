@@ -1,3 +1,4 @@
 python_version:
-- 'new'
+# disable py310 / urllib3 v2 build from main until it can be given a separate hash
+#- 'new'
 - 'old'
