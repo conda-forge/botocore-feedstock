@@ -12,6 +12,8 @@ source:
 build:
   number: 0
   noarch: python
+  string: pyge38_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_version == "old"]
+  string: pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_version == "new"]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
