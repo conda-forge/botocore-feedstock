@@ -19,7 +19,7 @@ build:
 requirements:
   build:
     # temporary workaround for https://github.com/conda-forge/pip-feedstock/issues/124
-    - pip < 24.1
+    - pip <24.1
   host:
     - python >=3.8   # [not python_geq_310]
     - python >=3.10  # [python_geq_310]
