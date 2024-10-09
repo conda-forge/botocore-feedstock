@@ -21,6 +21,7 @@ requirements:
     - python >=3.8   # [not python_geq_310]
     - python >=3.10  # [python_geq_310]
     - pip
+    - setuptools
   run:
     - python >=3.8   # [not python_geq_310]
     - python >=3.10  # [python_geq_310]
