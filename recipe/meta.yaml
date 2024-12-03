@@ -10,7 +10,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   string: pyge38_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [not python_geq_310]
   string: pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_geq_310]
@@ -18,13 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8   # [not python_geq_310]
-    - python >=3.10  # [python_geq_310]
+    - python >={{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8   # [not python_geq_310]
-    - python >=3.10  # [python_geq_310]
+    - python >={{ python_min }}
     - jmespath >=0.7.1,<2.0.0
     - python-dateutil >=2.1,<3.0.0
     # https://github.com/boto/botocore/pull/3034
@@ -44,6 +42,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://aws.amazon.com/sdk-for-python/
