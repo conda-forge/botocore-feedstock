@@ -18,13 +18,11 @@ build:
 
 requirements:
   host:
-    - python >={{ python_min }}  # [not python_geq_310]
-    - python >={{ python_min }}  # [python_geq_310]
+    - python >={{ python_min }}
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}  # [not python_geq_310]
-    - python >={{ python_min }}  # [python_geq_310]
+    - python >={{ python_min }}
     - jmespath >=0.7.1,<2.0.0
     - python-dateutil >=2.1,<3.0.0
     # https://github.com/boto/botocore/pull/3034
