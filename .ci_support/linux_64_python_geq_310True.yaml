@@ -9,4 +9,4 @@ docker_image:
 python_geq_310:
 - 'True'
 python_min:
-- '3.10'
+- '3.9'
