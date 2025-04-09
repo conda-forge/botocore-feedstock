@@ -12,7 +12,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   string: |-
     pyge38_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [not python_geq_310]
