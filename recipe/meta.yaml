@@ -1,7 +1,7 @@
 {% set python_min = "3.9" %}  # [not python_geq_310]
 {% set python_min = "3.10" %}  # [python_geq_310]
-{% set version = "1.40.10" %}
-{% set hash = "db3b14043bc90fe4220edbc2e89e8f5af1d2d4aacc16bab3c30dacd98b0073e3" %}
+{% set version = "1.40.11" %}
+{% set hash = "95af22e1b2230bdd5faa9d1c87e8b147028b14b531770a1148bf495967ccba5e" %}
 
 package:
   name: botocore
