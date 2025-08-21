@@ -11,9 +11,8 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  string: pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
