@@ -1,5 +1,4 @@
-{% set python_min = "3.9" %}  # [not python_geq_310]
-{% set python_min = "3.10" %}  # [python_geq_310]
+{% set python_min = "3.10" %}
 {% set version = "1.40.14" %}
 {% set hash = "1810494c8c4190f20f9e17f2da4f7ee91eda863f429c6d690ea17ec41a8f83c4" %}
 
@@ -14,9 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  string: |-
-    pyge39_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [not python_geq_310]
-    pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [python_geq_310]
+  string: pyge310_{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -29,9 +26,9 @@ requirements:
     - jmespath >=0.7.1,<2.0.0
     - python-dateutil >=2.1,<3.0.0
     # https://github.com/boto/botocore/pull/3034
-    - urllib3 >=1.25.4,<1.27       # [not python_geq_310]
+    #- urllib3 >=1.25.4,<1.27       # [not python_geq_310]
     # https://github.com/boto/botocore/pull/3141
-    - urllib3 >=1.25.4,!=2.2.0,<3  # [python_geq_310]
+    - urllib3 >=1.25.4,!=2.2.0,<3
 
 test:
   imports:
