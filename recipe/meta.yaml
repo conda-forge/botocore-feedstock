@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
-{% set version = "1.40.14" %}
-{% set hash = "1810494c8c4190f20f9e17f2da4f7ee91eda863f429c6d690ea17ec41a8f83c4" %}
+{% set version = "1.40.15" %}
+{% set hash = "4960800e4c5a7b43db22550979c22f5a324cbaf75ef494bbb2cf400ef1e6aca7" %}
 
 package:
   name: botocore
@@ -11,7 +11,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
