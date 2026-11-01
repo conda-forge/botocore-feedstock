@@ -13,7 +13,7 @@ source:
   sha256: ${{ hash }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     # remove vendored certs, used only if certifi is not available
