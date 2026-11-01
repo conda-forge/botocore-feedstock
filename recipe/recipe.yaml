@@ -15,7 +15,10 @@ source:
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script:
+    # remove vendored certs, used only if certifi is not available
+    - rm botocore/cacert.pem
+    - ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,6 +33,8 @@ requirements:
     #- urllib3 >=1.25.4,<1.27       # [not python_geq_310]
     # https://github.com/boto/botocore/pull/3141
     - urllib3 >=1.25.4,!=2.2.0,<3
+    # certifi is needed to use system certificates
+    - certifi
 
 tests:
   - python:
@@ -44,6 +49,9 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
+  - script:
+      # smoke test that certifi is used
+      - python -c 'import botocore.httpsession as bh; assert "certifi" in bh.get_cert_path(True)'
 
 about:
   license_file: LICENSE.txt
