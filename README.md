@@ -197,6 +197,3 @@ Feedstock Maintainers
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@tkelman](https://github.com/tkelman/)
 
-
-<!-- dummy commit to enable rerendering -->
-
